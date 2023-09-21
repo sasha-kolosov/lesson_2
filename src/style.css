@@ -1,0 +1,38 @@
+BODY {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+DIV.container {
+    height: 90vh;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+DIV.Grid {
+    display: flex;
+    width: 500px;
+    height: 500px;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+
+DIV.field {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+DIV.goblin {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-image: url('../assets/goblin.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
