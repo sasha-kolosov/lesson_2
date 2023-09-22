@@ -1,9 +1,23 @@
 class Game {
     constructor(options) {
         this.fields = document.getElementsByClassName('field')
+        this.score = 0
+        this.scoreBlock = document.getElementById('score')
     }
 
     start() {
+        for (let i = 0; i < this.fields.length; i++) {
+            this.fields[i].addEventListener('click', () => {
+                if (this.fields[i].classList.contains('goblin')) {
+                    for (let i = 0; i < this.fields.length; i++) {
+                        this.fields[i].classList.remove('goblin')
+                    } 
+                    this.score += 1
+                    this.scoreBlock.innerHTML = this.score
+                }
+            })
+        }
+
         setInterval(() => {
             this.random()
         }, 2000)
