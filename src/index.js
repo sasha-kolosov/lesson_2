@@ -6,4 +6,4 @@ const root = document.getElementById('root')
 
 root.innerHTML = new App().render()
 
-{ new Game().start() }
+new Game().start()
