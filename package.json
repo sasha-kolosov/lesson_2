@@ -7,7 +7,9 @@
     "watch": "webpack --mode development --watch",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "start": "webpack-dev-server --mode development --open"
+    "start": "webpack-dev-server --mode development --open",
+    "test": "jest",
+    "lint": "eslint ."
   },
   "author": "Sasha Kolosov",
   "license": "ISC",
