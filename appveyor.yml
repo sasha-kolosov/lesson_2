@@ -1,0 +1,13 @@
+image: Ubuntu1804 # образ для сборки
+stack: node 12 # окружение
+version: 1.9.0
+branches:
+  only:
+    - master
+cache: 
+  - node_modules
+install:
+  - npm install # команда установки зависимостей
+build: off
+test_script:
+- npm run lint && npm test # скрипт сборки
